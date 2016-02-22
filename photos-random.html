@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Mostrador aleatorio de imagenes</title>
+</head>
+<body>
+  <p><span id=""></span><a href="javascript:imgRandoms()">Mostrar imagen aleatoria</a></p>
+	<p><img id="image"></p>
+	<script type ="text/javascript" charset="utf-8">
+    var fotos = [
+    "http://www.minimoi.com/blog/wp-content/uploads/2012/09/fotos-familia-originales.jpg",
+    "http://www.minimoi.com/blog/wp-content/uploads/2012/09/coolest-family-photo-ideas.jpg",
+    "http://www.minimoi.com/blog/wp-content/uploads/2014/08/foto-ni%C3%B1os-jugando-con-manguera-minimoi.jpg",
+    "http://www.minimoi.com/blog/wp-content/uploads/2013/09/retrato-familiar-original-y-divertido.jpg"
+    ];
+
+    function imgRandoms() {
+    var id = Math.round(Math.random()*3);
+    document.getElementById('image').src = fotos[id];
+    }
+  </script>
+</body>
+</html>
